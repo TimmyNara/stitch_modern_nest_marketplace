@@ -1,0 +1,60 @@
+<template>
+  <section class="section">
+    <h1 class="section-title">Welcome back, Elena</h1>
+    <p class="section-copy">Manage your orders, saved items, and preferences.</p>
+    <div class="grid grid-2" style="gap: 24px; margin-top: 32px;">
+      <div class="panel">
+        <div class="text-overline">Recent Orders</div>
+        <div style="display: grid; gap: 18px; margin-top: 24px;">
+          <div class="card-body" style="background: var(--surface-muted); border-radius: 20px;">
+            <div class="checkout-row"><strong>Ceramic Dining Set</strong><span>$145.00</span></div>
+            <p class="card-subtitle">Order #AH-8472 • Placed Oct 12, 2023 • Delivered</p>
+          </div>
+          <div class="card-body" style="background: var(--surface-muted); border-radius: 20px;">
+            <div class="checkout-row"><strong>Arc Table Lamp</strong><span>$210.00</span></div>
+            <p class="card-subtitle">Order #AH-8391 • Placed Sep 28, 2023 • Processing</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="text-overline">Account Details</div>
+        <div style="margin-top: 24px; display: grid; gap: 12px;">
+          <p><strong>Name</strong><br />Elena Vance</p>
+          <p><strong>Email</strong><br />elena.vance@example.com</p>
+          <p><strong>Default Address</strong><br />1240 Serenity Lane, Apt 4B<br />Portland, OR 97209</p>
+          <p><strong>Payment Method</strong><br />VISA •••• 4242</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="section" style="margin-top: 40px;">
+      <h2 class="section-title">Saved for Later</h2>
+      <div class="product-grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80" alt="Organic Form Vase" />
+          <div class="card-body">
+            <h3 class="card-title">Organic Form Vase</h3>
+            <span>$85.00</span>
+          </div>
+          <button class="button-solid cta-button" style="margin-top: 16px;">Move to Cart</button>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="Woven Linen Throw" />
+          <div class="card-body">
+            <h3 class="card-title">Woven Linen Throw</h3>
+            <span>$120.00</span>
+          </div>
+          <button class="button-solid cta-button" style="margin-top: 16px;">Move to Cart</button>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80" alt="Bouclé Accent Chair" />
+          <div class="card-body">
+            <h3 class="card-title">Bouclé Accent Chair</h3>
+            <span>$890.00</span>
+          </div>
+          <button class="button-outline cta-button" style="margin-top: 16px;">Options Available</button>
+        </div>
+      </div>
+    </section>
+  </section>
+</template>

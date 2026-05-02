@@ -1,0 +1,43 @@
+<template>
+  <section class="section grid grid-2" style="gap: 32px;">
+    <div>
+      <h1 class="section-title">Part with Purpose.</h1>
+      <p class="section-copy">Aura Home connects your well-loved pieces with homes that appreciate quiet luxury and enduring design. List your item below.</p>
+      <div class="card" style="background-image: url('https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=80'); background-size: cover; min-height: 420px;"></div>
+    </div>
+    <div class="form-card">
+      <div class="text-overline">Item Imagery</div>
+      <div class="card-body" style="border: 1px dashed var(--surface-strong); text-align: center; color: var(--text-muted);">
+        <p>Click to upload high-resolution images</p>
+        <p>JPEG or PNG. Use natural lighting for best results.</p>
+      </div>
+      <div class="field-group" style="margin-top: 24px;">
+        <label class="label">Title</label>
+        <input type="text" placeholder="e.g., Mid-Century Walnut Credenza" />
+        <label class="label">Category</label>
+        <select>
+          <option>Select category...</option>
+          <option>Furniture</option>
+          <option>Decor</option>
+          <option>Lighting</option>
+          <option>Textiles</option>
+        </select>
+        <label class="label">Price</label>
+        <input type="number" placeholder="$ 0.00" />
+        <label class="label">Condition</label>
+        <div class="variant-buttons" style="margin-top: 12px; gap: 12px;">
+          <button class="button-outline">Mint</button>
+          <button class="button-outline">Excellent</button>
+          <button class="button-outline">Good</button>
+          <button class="button-outline">Fair</button>
+        </div>
+        <label class="label">Description & Provenance</label>
+        <textarea placeholder="Share the story behind this piece, materials, dimensions, and any signs of wear that contribute to its character..."></textarea>
+        <div style="display: flex; gap: 16px; margin-top: 24px; flex-wrap: wrap;">
+          <button class="button-outline">Save Draft</button>
+          <button class="button-solid">Publish Listing</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>

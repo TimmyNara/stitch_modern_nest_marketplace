@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us - Aura Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#ccc5be",
+                        "on-primary-fixed-variant": "#444937",
+                        "surface": "#faf9f6",
+                        "inverse-primary": "#c4c9b1",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#5c614d",
+                        "on-primary-container": "#eff4db",
+                        "on-tertiary-container": "#e4f4fe",
+                        "on-background": "#1a1c1a",
+                        "on-secondary-fixed-variant": "#4a4640",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#0e1d25",
+                        "surface-container-high": "#e9e8e5",
+                        "outline-variant": "#c7c7bd",
+                        "tertiary-fixed": "#d5e5ef",
+                        "surface-dim": "#dbdad7",
+                        "primary-fixed-dim": "#c4c9b1",
+                        "secondary-container": "#e6ded6",
+                        "primary-container": "#6b705c",
+                        "secondary-fixed": "#e9e1d9",
+                        "on-primary-fixed": "#191d0e",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#b9c9d3",
+                        "tertiary-container": "#617079",
+                        "inverse-on-surface": "#f2f1ee",
+                        "surface-bright": "#faf9f6",
+                        "secondary": "#625e57",
+                        "inverse-surface": "#2f312f",
+                        "primary": "#535845",
+                        "on-surface": "#1a1c1a",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#e0e5cc",
+                        "outline": "#77786f",
+                        "on-secondary-fixed": "#1e1b16",
+                        "surface-container-highest": "#e3e2e0",
+                        "surface-container-low": "#f4f3f1",
+                        "background": "#faf9f6",
+                        "tertiary": "#485860",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#3a4951",
+                        "surface-variant": "#e3e2e0",
+                        "on-surface-variant": "#464740",
+                        "on-secondary-container": "#67625b",
+                        "surface-container": "#efeeeb",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "stack-sm": "8px",
+                        "section-gap": "80px",
+                        "margin-mobile": "16px",
+                        "stack-lg": "32px",
+                        "margin-desktop": "40px",
+                        "stack-md": "16px",
+                        "container-max": "1280px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-sm": ["Inter"],
+                        "display": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-md": ["12px", { "lineHeight": "1.2", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "label-lg": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "headline-sm": ["20px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "display": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="bg-[#FAF9F6] dark:bg-stone-950 font-['Inter'] tracking-tight antialiased docked full-width top-0 border-b border-stone-200/60 dark:border-stone-800/60 subtle border-b border-stone-100 dark:border-stone-900 shadow-[0_4px_20px_0px_rgba(107,112,92,0.05)] sticky z-50">
+<div class="max-w-[1280px] mx-auto px-10 h-20 flex justify-between items-center w-full">
+<!-- Brand -->
+<a class="text-2xl font-medium tracking-tighter text-[#6B705C] dark:text-stone-100" href="#">
+                Aura Home
+            </a>
+<!-- Navigation Links -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#6B705C] dark:hover:text-stone-200 transition-colors hover:opacity-80 transition-opacity duration-300 scale-95 active:scale-100 transition-transform" href="#">
+                    Shop
+                </a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#6B705C] dark:hover:text-stone-200 transition-colors hover:opacity-80 transition-opacity duration-300 scale-95 active:scale-100 transition-transform" href="#">
+                    Sell
+                </a>
+<a class="text-[#6B705C] dark:text-[#A3A895] border-b border-[#6B705C] font-medium" href="#">
+                    About
+                </a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#6B705C] dark:hover:text-stone-200 transition-colors hover:opacity-80 transition-opacity duration-300 scale-95 active:scale-100 transition-transform" href="#">
+                    Contact
+                </a>
+</nav>
+<!-- Trailing Icons -->
+<div class="flex items-center gap-4 text-[#6B705C] dark:text-[#8B9178]">
+<button class="hover:opacity-80 transition-opacity duration-300 scale-95 active:scale-100 transition-transform flex items-center justify-center p-2 rounded-full hover:bg-stone-100 dark:hover:bg-stone-900">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="hover:opacity-80 transition-opacity duration-300 scale-95 active:scale-100 transition-transform flex items-center justify-center p-2 rounded-full hover:bg-stone-100 dark:hover:bg-stone-900">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<button class="hover:opacity-80 transition-opacity duration-300 scale-95 active:scale-100 transition-transform flex items-center justify-center p-2 rounded-full hover:bg-stone-100 dark:hover:bg-stone-900">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Introduction Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-5 flex flex-col gap-stack-lg">
+<h1 class="font-display text-display text-on-surface">Designing Sanctuaries, <br/><span class="text-primary">Quietly.</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">
+                        Aura Home was born from a simple belief: your space should be a reflection of calm, not chaos. We curate and craft pieces that bring a grounded, serene presence into your daily life.
+                    </p>
+<div class="mt-stack-sm">
+<button class="bg-primary text-on-primary font-label-lg text-label-lg px-8 py-3 rounded-DEFAULT hover:bg-surface-tint transition-colors duration-300 ease-in-out inline-flex items-center gap-2">
+                            Explore Our Collection
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-7 mt-stack-lg lg:mt-0 relative group">
+<div class="absolute inset-0 bg-secondary-fixed-dim/20 rounded-xl transform translate-x-4 translate-y-4 -z-10 transition-transform duration-500 group-hover:translate-x-2 group-hover:translate-y-2"></div>
+<img class="w-full h-auto rounded-xl object-cover aspect-[4/3] shadow-[0_4px_20px_rgba(72,88,96,0.08)]" data-alt="A brightly lit, minimalist living room drenched in natural sunlight. The space embodies 'quiet luxury' with a soft bone-white textured wall and a plush, low-profile muted sage green sofa. A natural oak coffee table holds a single ceramic vase with dried branches. The aesthetic is serene, professional, and sophisticated, utilizing the Aura Home warm color palette and generous negative space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz9Pf30_xYbWC-Pgdgab3bJhWQS2ObgOZVEUxs-PlmYv63nxAN1WKEOJKNOVTBIp4MVFZlWf2oV0u4xOlirzpDJJvILYaxIVDrSeP2DFFkSJzukRYBQJzyX3BN6lNusISzZI7FUPNzPaxGc2aqmvMxYyqYtSHAL6UvWDJpvBUGFB0FAWDuyyxXq54NquXkBn4wF-qs8h_RqlrUiOR2IhehAACRbxiidkc2sL1yqcHpVtb2UMrn4I0LDYNj-393Uwvll2RK5haP8Equ"/>
+</div>
+</div>
+</section>
+<!-- Mission Statement (Bento Grid Style) -->
+<section class="bg-surface-container-low py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-stack-lg max-w-2xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-sm">Our Mission</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">We believe that beautiful, lasting design shouldn't be a privilege. We strive to balance exceptional craftsmanship with an accessible approach.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Feature 1 -->
+<div class="bg-surface rounded-lg p-8 shadow-[0_4px_20px_rgba(72,88,96,0.05)] flex flex-col gap-stack-md border border-outline-variant/30">
+<div class="w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined icon-fill">diamond</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Affordable Quality</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-grow">
+                            By working directly with artisans and prioritizing timeless materials, we eliminate unnecessary markups without compromising the integrity or longevity of our pieces.
+                        </p>
+</div>
+<!-- Feature Image (Bento asymmetric element) -->
+<div class="md:col-span-2 rounded-lg overflow-hidden relative shadow-[0_4px_20px_rgba(72,88,96,0.05)] min-h-[300px]">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A close-up shot focusing on the high-quality craftsmanship of a wooden chair joint. The wood is a warm, secondary beige tone with visible, natural grain. Soft, diffused lighting highlights the precision of the joinery and the smooth, matte finish. The image conveys a sense of reliability, artisanal skill, and premium yet accessible design, fitting the Corporate Modern style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM6DWpg5-CscN5p2eDlr9a2R1pv5Z4qH_XS5kE0EHVi6USBnU7Ojtl90xBFewrVq5XyGRQ62VO5RuhoLVLLYJXliyMr7RCM_orEuzZunP4UpBFsGedCAYavAut4hqdD_WqOX3DffW1acaUXpPdnkQhT59IJk0bnv5MOs3XLN2dHVmPtjqTKR7GaVIwZcwxw_T44ytpZXXNx4nTM7C8LAlQnJCAv5QHO_svxU_xdNqjuEqBfHT6xMbpCQmbIgDEHkaTzlV305z9b_dj"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<p class="font-label-lg text-label-lg text-on-primary mb-2 tracking-widest uppercase">The Craft</p>
+<p class="font-headline-md text-headline-md text-on-primary">Materials meant to age gracefully.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap">
+<div class="flex flex-col md:flex-row justify-between items-end mb-stack-lg border-b border-outline-variant/30 pb-stack-sm">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Why Choose Aura.</h2>
+</div>
+<div class="hidden md:block">
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm text-right">A commitment to service that matches the quality of our curation.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter lg:gap-16">
+<!-- Promise 1 -->
+<div class="flex gap-stack-md group">
+<div class="flex-shrink-0 mt-1">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform duration-300">local_shipping</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-stack-sm">Swift, Secure Delivery</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            We know the anticipation of completing your space. Our logistics are optimized for speed and care, ensuring your pieces arrive promptly and in pristine condition, ready to elevate your home.
+                        </p>
+</div>
+</div>
+<!-- Promise 2 -->
+<div class="flex gap-stack-md group">
+<div class="flex-shrink-0 mt-1">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform duration-300">verified_user</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-stack-sm">Unwavering Reliability</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            From secure transactions to transparent communication throughout your journey. We stand behind every product we sell, offering a seamless experience built on trust and a dedicated support team.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-50 dark:bg-stone-900 text-sm font-['Inter'] leading-relaxed w-full border-t border-stone-200 dark:border-stone-800 mt-20 tonal shift with border-t flat no shadows">
+<div class="max-w-[1280px] mx-auto px-10 py-16 flex flex-col md:flex-row justify-between items-start gap-8">
+<div class="flex flex-col gap-4">
+<span class="text-lg font-semibold text-[#6B705C] dark:text-[#8B9178]">
+                    Aura Home
+                </span>
+<p class="text-stone-600 dark:text-stone-400">
+                    © 2024 Aura Home. Designed for quiet luxury.
+                </p>
+</div>
+<nav class="flex flex-col md:flex-row gap-6 md:gap-8">
+<a class="text-stone-500 hover:text-stone-800 dark:hover:text-stone-200 hover:underline underline-offset-8 transition-all ease-in-out duration-200" href="#">
+                    Sustainability
+                </a>
+<a class="text-stone-500 hover:text-stone-800 dark:hover:text-stone-200 hover:underline underline-offset-8 transition-all ease-in-out duration-200" href="#">
+                    Shipping &amp; Returns
+                </a>
+<a class="text-stone-500 hover:text-stone-800 dark:hover:text-stone-200 hover:underline underline-offset-8 transition-all ease-in-out duration-200" href="#">
+                    Privacy Policy
+                </a>
+<a class="text-stone-500 hover:text-stone-800 dark:hover:text-stone-200 hover:underline underline-offset-8 transition-all ease-in-out duration-200" href="#">
+                    Store Locator
+                </a>
+</nav>
+</div>
+</footer>
+</body></html>

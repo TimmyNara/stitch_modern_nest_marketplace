@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aura Home - Shop</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "secondary-fixed-dim": "#ccc5be",
+                        "on-primary-fixed-variant": "#444937",
+                        "surface": "#faf9f6",
+                        "inverse-primary": "#c4c9b1",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#5c614d",
+                        "on-primary-container": "#eff4db",
+                        "on-tertiary-container": "#e4f4fe",
+                        "on-background": "#1a1c1a",
+                        "on-secondary-fixed-variant": "#4a4640",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#0e1d25",
+                        "surface-container-high": "#e9e8e5",
+                        "outline-variant": "#c7c7bd",
+                        "tertiary-fixed": "#d5e5ef",
+                        "surface-dim": "#dbdad7",
+                        "primary-fixed-dim": "#c4c9b1",
+                        "secondary-container": "#e6ded6",
+                        "primary-container": "#6b705c",
+                        "secondary-fixed": "#e9e1d9",
+                        "on-primary-fixed": "#191d0e",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#b9c9d3",
+                        "tertiary-container": "#617079",
+                        "inverse-on-surface": "#f2f1ee",
+                        "surface-bright": "#faf9f6",
+                        "secondary": "#625e57",
+                        "inverse-surface": "#2f312f",
+                        "primary": "#535845",
+                        "on-surface": "#1a1c1a",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#e0e5cc",
+                        "outline": "#77786f",
+                        "on-secondary-fixed": "#1e1b16",
+                        "surface-container-highest": "#e3e2e0",
+                        "surface-container-low": "#f4f3f1",
+                        "background": "#faf9f6",
+                        "tertiary": "#485860",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#3a4951",
+                        "surface-variant": "#e3e2e0",
+                        "on-surface-variant": "#464740",
+                        "on-secondary-container": "#67625b",
+                        "surface-container": "#efeeeb",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error-container": "#93000a"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "gutter": "24px",
+                        "stack-sm": "8px",
+                        "section-gap": "80px",
+                        "margin-mobile": "16px",
+                        "stack-lg": "32px",
+                        "margin-desktop": "40px",
+                        "stack-md": "16px",
+                        "container-max": "1280px",
+                        "unit": "8px"
+                    },
+                    fontFamily: {
+                        "label-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-sm": ["Inter"],
+                        "display": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    fontSize: {
+                        "label-md": ["12px", { lineHeight: "1.2", fontWeight: "500" }],
+                        "headline-lg": ["32px", { lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "600" }],
+                        "label-lg": ["14px", { lineHeight: "1.2", letterSpacing: "0.05em", fontWeight: "600" }],
+                        "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "headline-md": ["24px", { lineHeight: "1.3", fontWeight: "500" }],
+                        "headline-sm": ["20px", { lineHeight: "1.4", fontWeight: "500" }],
+                        "display": ["48px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "600" }],
+                        "body-sm": ["14px", { lineHeight: "1.5", fontWeight: "400" }],
+                        "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #faf9f6; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased pt-20">
+<header class="fixed top-0 w-full z-50 bg-[#FAF9F6] border-b border-stone-200/60 shadow-[0_4px_20px_0px_rgba(107,112,92,0.05)] font-['Inter'] tracking-tight">
+<div class="max-w-[1280px] mx-auto px-10 h-20 flex justify-between items-center w-full">
+<div class="text-2xl font-medium tracking-tighter text-[#6B705C]">Aura Home</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[#6B705C] border-b border-[#6B705C] font-medium hover:opacity-80 transition-opacity duration-300 scale-95 active:scale-100 transition-transform pb-1" href="#">Shop</a>
+<a class="text-stone-500 hover:text-[#6B705C] transition-colors hover:opacity-80 transition-opacity duration-300 scale-95 active:scale-100 transition-transform pb-1" href="#">Sell</a>
+<a class="text-stone-500 hover:text-[#6B705C] transition-colors hover:opacity-80 transition-opacity duration-300 scale-95 active:scale-100 transition-transform pb-1" href="#">About</a>
+<a class="text-stone-500 hover:text-[#6B705C] transition-colors hover:opacity-80 transition-opacity duration-300 scale-95 active:scale-100 transition-transform pb-1" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-6 text-[#6B705C]">
+<button class="hover:opacity-80 transition-opacity duration-300 scale-95 active:scale-100 transition-transform">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="hover:opacity-80 transition-opacity duration-300 scale-95 active:scale-100 transition-transform">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<button class="hover:opacity-80 transition-opacity duration-300 scale-95 active:scale-100 transition-transform">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap">
+<div class="flex flex-col md:flex-row justify-between items-end border-b border-surface-variant pb-stack-md mb-stack-lg gap-stack-md">
+<div>
+<h1 class="font-display text-display text-on-surface mb-stack-sm">Curated Collection</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Timeless pieces designed for a sanctuary home.</p>
+</div>
+<div class="w-full md:w-auto flex items-center gap-stack-md">
+<div class="relative flex-grow md:w-64">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface-container-lowest border border-outline-variant focus:border-primary-container focus:ring-1 focus:ring-primary-container rounded-DEFAULT font-body-md text-body-md text-on-surface transition-colors placeholder:text-outline-variant" placeholder="Search collection..." type="text"/>
+</div>
+<div class="relative min-w-[140px]">
+<select class="w-full appearance-none pl-4 pr-10 py-2 bg-surface border border-outline-variant rounded-DEFAULT font-label-md text-label-md text-on-surface focus:outline-none focus:border-primary-container">
+<option>Sort by: Featured</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+<option>Newest Arrivals</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row gap-gutter">
+<aside class="w-full lg:w-64 flex-shrink-0 space-y-stack-lg">
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface mb-stack-md uppercase tracking-widest text-outline">Category</h3>
+<ul class="space-y-stack-sm font-body-md text-body-md text-on-surface-variant">
+<li>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-checkbox h-4 w-4 text-primary border-outline-variant rounded-sm focus:ring-primary-container focus:ring-offset-surface" type="checkbox"/>
+<span class="group-hover:text-on-surface transition-colors">Furniture</span>
+</label>
+</li>
+<li>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="form-checkbox h-4 w-4 text-primary border-outline-variant rounded-sm focus:ring-primary-container focus:ring-offset-surface" type="checkbox"/>
+<span class="text-on-surface font-medium">Ceramics &amp; Decor</span>
+</label>
+</li>
+<li>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-checkbox h-4 w-4 text-primary border-outline-variant rounded-sm focus:ring-primary-container focus:ring-offset-surface" type="checkbox"/>
+<span class="group-hover:text-on-surface transition-colors">Lighting</span>
+</label>
+</li>
+<li>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-checkbox h-4 w-4 text-primary border-outline-variant rounded-sm focus:ring-primary-container focus:ring-offset-surface" type="checkbox"/>
+<span class="group-hover:text-on-surface transition-colors">Textiles</span>
+</label>
+</li>
+</ul>
+</div>
+<div class="h-px bg-surface-variant w-full"></div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface mb-stack-md uppercase tracking-widest text-outline">Price</h3>
+<ul class="space-y-stack-sm font-body-md text-body-md text-on-surface-variant">
+<li>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-radio h-4 w-4 text-primary border-outline-variant focus:ring-primary-container focus:ring-offset-surface" name="price" type="radio"/>
+<span class="group-hover:text-on-surface transition-colors">Under $100</span>
+</label>
+</li>
+<li>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-radio h-4 w-4 text-primary border-outline-variant focus:ring-primary-container focus:ring-offset-surface" name="price" type="radio"/>
+<span class="group-hover:text-on-surface transition-colors">$100 - $500</span>
+</label>
+</li>
+<li>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-radio h-4 w-4 text-primary border-outline-variant focus:ring-primary-container focus:ring-offset-surface" name="price" type="radio"/>
+<span class="group-hover:text-on-surface transition-colors">$500 - $1000</span>
+</label>
+</li>
+<li>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-radio h-4 w-4 text-primary border-outline-variant focus:ring-primary-container focus:ring-offset-surface" name="price" type="radio"/>
+<span class="group-hover:text-on-surface transition-colors">Over $1000</span>
+</label>
+</li>
+</ul>
+</div>
+<div class="h-px bg-surface-variant w-full"></div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface mb-stack-md uppercase tracking-widest text-outline">Condition</h3>
+<ul class="space-y-stack-sm font-body-md text-body-md text-on-surface-variant">
+<li>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="form-checkbox h-4 w-4 text-primary border-outline-variant rounded-sm focus:ring-primary-container focus:ring-offset-surface" type="checkbox"/>
+<span class="text-on-surface font-medium">New Artifacts</span>
+</label>
+</li>
+<li>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-checkbox h-4 w-4 text-primary border-outline-variant rounded-sm focus:ring-primary-container focus:ring-offset-surface" type="checkbox"/>
+<span class="group-hover:text-on-surface transition-colors">Restored Vintage</span>
+</label>
+</li>
+</ul>
+</div>
+</aside>
+<div class="flex-1 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-gutter gap-y-section-gap">
+<div class="group flex flex-col cursor-pointer">
+<div class="relative w-full aspect-[4/5] bg-surface-container mb-stack-md overflow-hidden rounded-DEFAULT">
+<img alt="Bone White Ceramic Vase" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A beautifully crafted, minimalist ceramic vase sitting on a light oak wood table. The vase has an organic, asymmetrical shape with a matte bone-white finish. The setting is a serene, sunlit room with soft, diffused natural light creating gentle shadows. The overall aesthetic is quiet luxury, emphasizing natural materials and grounded, earthy tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQglU84ZuUxUOQCMTMuzVcS5NxuekMkDj-X8kFyjPxlvffWpvTt-g9LjOV_vDgDplP-iTPp-Xu1wO3qBRiDC3XtzdQkoMIVgDUKPMNv5N7GJqJBZ9SOx7ngpAdIhE3WF1muYciaHxxtl2kOiDaURtbq1oYJ7VW3oPf8aFOlxG_OhraNiPujA5JVH07F_bdq6bCgD2-U8NT5zbunRzKNofi7iPBF3QzUvf3lD6wikD96wyCgd59gZEfxkPsX39KKEZ2TPH_tBc-4lLe"/>
+<div class="absolute inset-0 bg-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-full opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-sm">
+                                Quick View
+                            </button>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h2 class="font-body-md text-body-md text-on-surface">Asymmetric Bone Vase</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Hand-thrown stoneware</p>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface">$145</span>
+</div>
+<div class="flex items-center gap-1 mt-2 text-primary-container">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star_half</span>
+<span class="font-label-md text-label-md text-on-surface-variant ml-1">(42)</span>
+</div>
+</div>
+<div class="group flex flex-col cursor-pointer">
+<div class="relative w-full aspect-[4/5] bg-surface-container mb-stack-md overflow-hidden rounded-DEFAULT">
+<img alt="Sage Linen Lounge Chair" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A modern lounge chair featuring a solid ash wood frame and soft, muted sage green linen upholstery. The chair is positioned in a minimalist, airy living space with smooth, light grey concrete floors. Soft ambient lighting highlights the texture of the fabric and the smooth curves of the wood. The mood is calm, curated, and highly architectural." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV84Mb2d_a-26eZsHvKtw8lMxGJ1gisu6-3zWW4RCQh6hLWY3HMh4eZQpcdEe32TVyes5CioLy6j8i7mhrYHnx_-E49NQUy66CC2VWCRRlO1DdKc_P2YbA0jS4RylfEFkmcAYQDTZGFu6_t2YN44D0ZI7ZcH9rlKNSTOXQMuOUhMWUFbA5O0dwxycvBMySKmcsV0WfZt6utsre9f8U9ZUaPAQK0aW5KdQfnkScyCeaMv4nuvbax-GE43YgT_D9rniQFQ1UNVygze7S"/>
+<div class="absolute inset-0 bg-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-full opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-sm">
+                                Quick View
+                            </button>
+</div>
+<div class="absolute top-4 left-4 bg-secondary-container text-on-secondary-container font-label-md text-label-md px-3 py-1 rounded-sm">
+                            New Arrival
+                        </div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h2 class="font-body-md text-body-md text-on-surface">Ash &amp; Sage Lounge</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Solid wood frame</p>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface">$890</span>
+</div>
+<div class="flex items-center gap-1 mt-2 text-primary-container">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md text-on-surface-variant ml-1">(18)</span>
+</div>
+</div>
+<div class="group flex flex-col cursor-pointer">
+<div class="relative w-full aspect-[4/5] bg-surface-container mb-stack-md overflow-hidden rounded-DEFAULT">
+<img alt="Sculptural Floor Lamp" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A sculptural floor lamp made of blackened steel and frosted white glass, standing elegantly in the corner of a minimalist room. The lamp emits a warm, soft glow that grazes a textured plaster wall behind it. The aesthetic is corporate modern mixed with quiet luxury, utilizing deep slate accents against a bright, airy background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeRKFNNJlfPN-MFWoi6NBT45lKGN09EXlplRpIuGLF4fhWq2xo3Pk5jxKRiSce5VeaJ_EWM7HWkCoQEO7SW7fmulXsq0U8IWoFeGDgqxPyCbadTv45kXxv3x9YxvHRXVNbp30i_u0JNh0P7RU1ZX_iEomS4jwu3CdXBmEPr5DK6WsmDpnYBfLhSsmcVGM5XGssfQ_KEFq2DjQSYfOm38GlVgmr-d2OycR0r_FuYDtFOKLEzMihtmirvpKi-5-HvYn2FGlzCNI_aOKX"/>
+<div class="absolute inset-0 bg-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-full opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-sm">
+                                Quick View
+                            </button>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h2 class="font-body-md text-body-md text-on-surface">Eclipse Floor Lamp</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Blackened steel &amp; glass</p>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface">$420</span>
+</div>
+<div class="flex items-center gap-1 mt-2 text-primary-container">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="font-label-md text-label-md text-on-surface-variant ml-1">(5)</span>
+</div>
+</div>
+<div class="group flex flex-col cursor-pointer">
+<div class="relative w-full aspect-[4/5] bg-surface-container mb-stack-md overflow-hidden rounded-DEFAULT">
+<img alt="Linen Throw Blankets" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A stack of folded, high-quality linen throw blankets in earthy tones of beige, slate, and muted olive. They are resting on a minimalist wooden bench. The lighting is soft and cinematic, emphasizing the natural wrinkles and organic texture of the premium fabric. The scene conveys comfort, serenity, and understated elegance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAvzHJT7bushiUz3Af6iXy9gLOTdgA29gpjnLRnNYRHHMfXjxYJJcd6i5uakGDy5esJHsNM5buajUq2rY4bBfEiX_tC-TqVqArKxa5HfJnFiw6hqXzK8_Lqz2J5fvSGjxu4HhPhFbXq1m_Dqc7IbWjDyysKDbd3_pD_Q80i5PiO6siGbusriDw37Sd5Fw05G7R0ElO2kT7CWgcKRk2RTpb3_Albkn2LbU-WbvACo5O73P8opTszAMWRKHspAwW9Fj644o6tPjTrFog"/>
+<div class="absolute inset-0 bg-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-full opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-sm">
+                                Quick View
+                            </button>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h2 class="font-body-md text-body-md text-on-surface">Organic Linen Throw</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">100% European linen</p>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface">$115</span>
+</div>
+<div class="flex items-center gap-1 mt-2 text-primary-container">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star_half</span>
+<span class="font-label-md text-label-md text-on-surface-variant ml-1">(89)</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-stone-50 dark:bg-stone-900 text-sm font-['Inter'] leading-relaxed w-full border-t border-stone-200 dark:border-stone-800 mt-20">
+<div class="max-w-[1280px] mx-auto px-10 py-16 flex flex-col md:flex-row justify-between items-start gap-8">
+<div class="flex flex-col gap-4">
+<span class="text-lg font-semibold text-[#6B705C] dark:text-[#8B9178]">Aura Home</span>
+<span class="text-stone-600 dark:text-stone-400">© 2024 Aura Home. Designed for quiet luxury.</span>
+</div>
+<nav class="flex flex-col md:flex-row gap-6 md:gap-12 text-stone-500 hover:text-stone-800 dark:hover:text-stone-200">
+<a class="hover:underline underline-offset-8 transition-all ease-in-out duration-200" href="#">Sustainability</a>
+<a class="hover:underline underline-offset-8 transition-all ease-in-out duration-200" href="#">Shipping &amp; Returns</a>
+<a class="hover:underline underline-offset-8 transition-all ease-in-out duration-200" href="#">Privacy Policy</a>
+<a class="hover:underline underline-offset-8 transition-all ease-in-out duration-200" href="#">Store Locator</a>
+</nav>
+</div>
+</footer>
+</body></html>

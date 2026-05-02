@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aura Home - Minimalist Linen Sofa</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#ccc5be",
+                    "on-primary-fixed-variant": "#444937",
+                    "surface": "#faf9f6",
+                    "inverse-primary": "#c4c9b1",
+                    "on-secondary": "#ffffff",
+                    "surface-tint": "#5c614d",
+                    "on-primary-container": "#eff4db",
+                    "on-tertiary-container": "#e4f4fe",
+                    "on-background": "#1a1c1a",
+                    "on-secondary-fixed-variant": "#4a4640",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#0e1d25",
+                    "surface-container-high": "#e9e8e5",
+                    "outline-variant": "#c7c7bd",
+                    "tertiary-fixed": "#d5e5ef",
+                    "surface-dim": "#dbdad7",
+                    "primary-fixed-dim": "#c4c9b1",
+                    "secondary-container": "#e6ded6",
+                    "primary-container": "#6b705c",
+                    "secondary-fixed": "#e9e1d9",
+                    "on-primary-fixed": "#191d0e",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#b9c9d3",
+                    "tertiary-container": "#617079",
+                    "inverse-on-surface": "#f2f1ee",
+                    "surface-bright": "#faf9f6",
+                    "secondary": "#625e57",
+                    "inverse-surface": "#2f312f",
+                    "primary": "#535845",
+                    "on-surface": "#1a1c1a",
+                    "on-tertiary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "primary-fixed": "#e0e5cc",
+                    "outline": "#77786f",
+                    "on-secondary-fixed": "#1e1b16",
+                    "surface-container-highest": "#e3e2e0",
+                    "surface-container-low": "#f4f3f1",
+                    "background": "#faf9f6",
+                    "tertiary": "#485860",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#3a4951",
+                    "surface-variant": "#e3e2e0",
+                    "on-surface-variant": "#464740",
+                    "on-secondary-container": "#67625b",
+                    "surface-container": "#efeeeb",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "stack-sm": "8px",
+                    "section-gap": "80px",
+                    "margin-mobile": "16px",
+                    "stack-lg": "32px",
+                    "margin-desktop": "40px",
+                    "stack-md": "16px",
+                    "container-max": "1280px",
+                    "unit": "8px"
+            },
+            "fontFamily": {
+                    "label-md": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "label-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "headline-sm": ["Inter"],
+                    "display": ["Inter"],
+                    "body-sm": ["Inter"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "label-md": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "label-lg": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "headline-sm": ["20px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "display": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="bg-[#FAF9F6] dark:bg-stone-950 font-['Inter'] tracking-tight antialiased docked full-width top-0 border-b border-stone-200/60 dark:border-stone-800/60 subtle border-b border-stone-100 dark:border-stone-900 shadow-[0_4px_20px_0px_rgba(107,112,92,0.05)] z-50 sticky">
+<div class="max-w-[1280px] mx-auto px-10 h-20 flex justify-between items-center w-full">
+<div class="text-2xl font-medium tracking-tighter text-[#6B705C] dark:text-stone-100 cursor-pointer">
+                Aura Home
+            </div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[#6B705C] dark:text-[#A3A895] border-b border-[#6B705C] font-medium py-2 scale-95 active:scale-100 transition-transform" href="#">Shop</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#6B705C] dark:hover:text-stone-200 transition-colors py-2 hover:opacity-80 transition-opacity duration-300 scale-95 active:scale-100 transition-transform" href="#">Sell</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#6B705C] dark:hover:text-stone-200 transition-colors py-2 hover:opacity-80 transition-opacity duration-300 scale-95 active:scale-100 transition-transform" href="#">About</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#6B705C] dark:hover:text-stone-200 transition-colors py-2 hover:opacity-80 transition-opacity duration-300 scale-95 active:scale-100 transition-transform" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-6 text-[#6B705C] dark:text-[#8B9178]">
+<button aria-label="search" class="hover:opacity-80 transition-opacity duration-300 scale-95 active:scale-100 transition-transform flex items-center justify-center">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button aria-label="shopping_cart" class="hover:opacity-80 transition-opacity duration-300 scale-95 active:scale-100 transition-transform flex items-center justify-center">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<button aria-label="person" class="hover:opacity-80 transition-opacity duration-300 scale-95 active:scale-100 transition-transform flex items-center justify-center">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg md:py-margin-desktop">
+<!-- Breadcrumbs -->
+<nav class="font-body-sm text-body-sm text-on-surface-variant mb-stack-lg flex items-center gap-2">
+<a class="hover:text-on-surface transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<a class="hover:text-on-surface transition-colors" href="#">Shop</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<a class="hover:text-on-surface transition-colors" href="#">Seating</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="text-on-surface">The Serene Linen Sofa</span>
+</nav>
+<!-- Product Overview -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-section-gap">
+<!-- Image Gallery (Left) -->
+<div class="lg:col-span-7 flex flex-col gap-stack-sm">
+<div class="w-full aspect-[4/3] bg-surface-container rounded overflow-hidden relative">
+<img alt="Main product image" class="w-full h-full object-cover" data-alt="A high-end, minimalist linen sofa positioned centrally in a sunlit, contemporary living room. The room features a soft, bone-white aesthetic indicative of quiet luxury. Natural light streams through large windows, creating soft, ambient shadows on the light hardwood floor. The overall mood is serene, grounded, and aspirational, highlighting the textured fabric of the sofa." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmTojZl5GuplGXBG0ZOznpd_F9l6aYP37fXyXF09Pwb4KK4TyRHqcY1IdIJNInxODnxzdkmhV8IbIINgU0Z3GzbgKvXeOoCCa6w_159Z9bPjsenovcfCZVl_DhVmr5aXv6sgs35qlN5WlEcObu4N6K0-GfohE3-2aeVGkYpFlC-42QY2k2oieEA7DDTZHd9uU8IcmkHAkfwvUepFKFa2tgUiKhOZPgPSQkftzTsAgJHqiLMsqxTP9t4F_NgOL5BfkQbyWloWgah95O"/>
+</div>
+<div class="grid grid-cols-3 gap-stack-sm">
+<div class="aspect-square bg-surface-container rounded overflow-hidden cursor-pointer hover:opacity-90 transition-opacity">
+<img alt="Detail view 1" class="w-full h-full object-cover" data-alt="A close-up macro shot focusing on the high-quality, textured linen weave of a premium sofa armrest. The lighting is soft and diffused, highlighting the natural imperfections and organic feel of the fabric against a soft-modern, muted background. The color palette revolves around warm, natural bone and beige tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3GAFVaRdfaBGohXnx-sHM3wPRucuVvI8V0Iigzw39XC3qjzodOV6WU-Itk1xCzYuGON1IEvfoaFqFFVj-sq2OtsXzn67yRksl-PzqtDtKyjVb_lACgM1kTwAKzLEU0vHswT3zU0wVZwvTEJEB1yQAcpFXZxudgIGYNLVIXHQdspOzjhwM-vl9-BifhWRnwQ7-Z5OlOhyf2NJ5cyC4wv1hnr44piK1AGQVH4zwcLRp4ahWQHaHJfuBzskw5CHWA_WBkORUvppXLMZy"/>
+</div>
+<div class="aspect-square bg-surface-container rounded overflow-hidden cursor-pointer hover:opacity-90 transition-opacity">
+<img alt="Detail view 2" class="w-full h-full object-cover" data-alt="A low-angle lifestyle photograph of an elegant, minimalist linen sofa in a pristine, lightly decorated room. A subtle shadow drops beneath the sofa, emphasizing a tonal layered look rather than stark contrast. The mood is calm and inviting, reflecting a curated, editorial e-commerce aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0rXd0hbGohuT8IK38991aoBLeN_LnzMYMqrhon9uHTfVu-FZmX2p8pA8Abzl9QppADIx19uWnV73M3UEO5dqKMZOnuQQ_fVeIhJJEa0tAvucpLIKRYS3cNAPH0NwXH5ptgHfdk7E4CzX6v4oSXRA_YBAuo6oBWTXEtEVSAvB_W5bVKpyGVC3ZpKwWz0p-g8PzaKeZICzjrPfKTjWVig7jg87vew58N-ubh8Nzh1AWBqxDRaORzBLYAiTJ4k3PuvM0jyoXoMpnOWml"/>
+</div>
+<div class="aspect-square bg-surface-container rounded overflow-hidden cursor-pointer hover:opacity-90 transition-opacity">
+<img alt="Detail view 3" class="w-full h-full object-cover" data-alt="A beautifully styled end table sitting next to a minimalist linen sofa. A ceramic vase with dry branches rests on the table. The lighting is warm and indirect, contributing to a serene, sanctuary-like home environment. The colors are strictly grounded in warm whites, muted sages, and soft stones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4IKYZZWtCnGBBgN05Ur95404bnT_M8vUNGhLmmfCCBbqrEhyiunkCbPoWsGmFTNQJtva0z6q4t_yUFiSLTsIVNcBFSCRI_E78V0RkiTSGhAWwI3Yufl4b51qag1hhXZJUU4QvsSYNCOxl1MnI1npJvXtrrFbyweFo4D1xNmynD7RQ4kNAu6NuRqkHulPhWAeG5bAweVEhvAUtKmWVsQQErdCmqfpJXzODLtYiQA517lX77WKkYOSzV326GnJOYd-I-BbtYOp-Egm7"/>
+</div>
+</div>
+</div>
+<!-- Product Details (Right) -->
+<div class="lg:col-span-5 flex flex-col pt-stack-md lg:pt-0 lg:pl-stack-lg">
+<div class="flex items-center gap-stack-sm mb-stack-md">
+<span class="bg-secondary-container text-on-secondary-container font-label-md text-label-md px-3 py-1 rounded-full uppercase tracking-wider">Sustainable</span>
+<span class="bg-surface-variant text-on-surface-variant font-label-md text-label-md px-3 py-1 rounded-full uppercase tracking-wider">Bestseller</span>
+</div>
+<h1 class="font-display text-display text-on-surface mb-stack-sm">The Serene Linen Sofa</h1>
+<p class="font-headline-md text-headline-md text-on-surface-variant mb-stack-lg">$2,850</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg leading-relaxed">
+                    Crafted with intentionality, the Serene Sofa anchors your living space with grounded elegance. Upholstered in premium, pre-washed Belgian linen, it offers a tactile experience that softens beautifully over time. Designed for quiet moments and deep rest.
+                </p>
+<!-- Color Selection -->
+<div class="mb-stack-lg">
+<h3 class="font-label-lg text-label-lg text-on-surface mb-stack-sm">Color: Oat</h3>
+<div class="flex gap-stack-sm">
+<button aria-label="Select Oat color" class="w-8 h-8 rounded-full bg-[#E5E0D8] border-2 border-primary focus:outline-none"></button>
+<button aria-label="Select Sage color" class="w-8 h-8 rounded-full bg-[#D4D6D0] border-2 border-transparent hover:border-outline-variant focus:outline-none"></button>
+<button aria-label="Select Stone color" class="w-8 h-8 rounded-full bg-[#A8A5A1] border-2 border-transparent hover:border-outline-variant focus:outline-none"></button>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-stack-md mb-stack-lg border-b border-outline-variant pb-stack-lg">
+<div class="flex items-center justify-between border border-outline-variant rounded px-4 py-3 sm:w-32">
+<button class="text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="font-body-md text-body-md text-on-surface">1</span>
+<button class="text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<button class="flex-1 bg-primary text-on-primary font-label-lg text-label-lg py-4 px-6 rounded hover:bg-surface-tint transition-colors duration-300 flex justify-center items-center gap-2">
+<span>Add to Cart</span>
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+</button>
+</div>
+<!-- Quick Specs Accordion (Static visual) -->
+<div class="flex flex-col gap-stack-sm">
+<div class="flex justify-between items-center py-stack-sm border-b border-surface-variant cursor-pointer group">
+<span class="font-label-lg text-label-lg text-on-surface">Dimensions &amp; Details</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-on-surface transition-colors">expand_more</span>
+</div>
+<div class="flex justify-between items-center py-stack-sm border-b border-surface-variant cursor-pointer group">
+<span class="font-label-lg text-label-lg text-on-surface">Materials &amp; Care</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-on-surface transition-colors">expand_more</span>
+</div>
+<div class="flex justify-between items-center py-stack-sm border-b border-surface-variant cursor-pointer group">
+<span class="font-label-lg text-label-lg text-on-surface">Shipping &amp; Returns</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-on-surface transition-colors">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Deep Specs Section (Asymmetric layout) -->
+<section class="mb-section-gap py-section-gap border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-md">Crafted for Longevity</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        Every element of the Serene Sofa is chosen with endurance in mind. From the kiln-dried hardwood frame engineered to resist warping, to the high-resiliency foam core wrapped in soft down, it offers a balance of structured support and immediate comfort. The aesthetic is intentionally minimal, allowing the quality of the materials to speak for themselves in any light-drenched room.
+                    </p>
+</div>
+<div class="bg-surface-container-low p-margin-desktop rounded flex flex-col justify-center">
+<ul class="space-y-stack-md">
+<li class="flex items-start gap-stack-sm">
+<span class="material-symbols-outlined text-primary mt-1 text-[20px]">check_circle</span>
+<div>
+<strong class="font-label-lg text-label-lg text-on-surface block">Frame</strong>
+<span class="font-body-md text-body-md text-on-surface-variant">Kiln-dried FSC®-certified hardwood</span>
+</div>
+</li>
+<li class="flex items-start gap-stack-sm">
+<span class="material-symbols-outlined text-primary mt-1 text-[20px]">check_circle</span>
+<div>
+<strong class="font-label-lg text-label-lg text-on-surface block">Suspension</strong>
+<span class="font-body-md text-body-md text-on-surface-variant">Sinuous steel springs for enduring support</span>
+</div>
+</li>
+<li class="flex items-start gap-stack-sm">
+<span class="material-symbols-outlined text-primary mt-1 text-[20px]">check_circle</span>
+<div>
+<strong class="font-label-lg text-label-lg text-on-surface block">Upholstery</strong>
+<span class="font-body-md text-body-md text-on-surface-variant">100% Belgian Linen, OEKO-TEX® certified</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="mb-section-gap">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-stack-lg border-b border-outline-variant pb-stack-md">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-sm">Customer Reviews</h2>
+<div class="flex items-center gap-2">
+<div class="flex text-primary">
+<span class="material-symbols-outlined fill text-[20px]">star</span>
+<span class="material-symbols-outlined fill text-[20px]">star</span>
+<span class="material-symbols-outlined fill text-[20px]">star</span>
+<span class="material-symbols-outlined fill text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star_half</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface-variant">4.8 based on 124 reviews</span>
+</div>
+</div>
+<button class="mt-stack-md md:mt-0 font-label-lg text-label-lg text-primary hover:text-surface-tint transition-colors border-b-2 border-primary pb-1">Write a Review</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Review Card 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-gutter rounded flex flex-col justify-between">
+<div>
+<div class="flex text-primary mb-stack-sm">
+<span class="material-symbols-outlined fill text-[16px]">star</span>
+<span class="material-symbols-outlined fill text-[16px]">star</span>
+<span class="material-symbols-outlined fill text-[16px]">star</span>
+<span class="material-symbols-outlined fill text-[16px]">star</span>
+<span class="material-symbols-outlined fill text-[16px]">star</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-stack-sm">Exactly what we needed</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-stack-md">
+                            "The linen is incredibly soft yet feels durable. It completely transformed our living room into a calmer space. Delivery was seamless."
+                        </p>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Sarah M. — October 12, 2023</span>
+</div>
+<!-- Review Card 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-gutter rounded flex flex-col justify-between">
+<div>
+<div class="flex text-primary mb-stack-sm">
+<span class="material-symbols-outlined fill text-[16px]">star</span>
+<span class="material-symbols-outlined fill text-[16px]">star</span>
+<span class="material-symbols-outlined fill text-[16px]">star</span>
+<span class="material-symbols-outlined fill text-[16px]">star</span>
+<span class="material-symbols-outlined fill text-[16px]">star</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-stack-sm">Beautiful design</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-stack-md">
+                            "The minimalist profile is stunning. It's deep enough to lounge comfortably but structured enough to look tidy. Highly recommend the Oat color."
+                        </p>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">James L. — September 28, 2023</span>
+</div>
+<!-- Review Card 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-gutter rounded flex flex-col justify-between hidden lg:flex">
+<div>
+<div class="flex text-primary mb-stack-sm">
+<span class="material-symbols-outlined fill text-[16px]">star</span>
+<span class="material-symbols-outlined fill text-[16px]">star</span>
+<span class="material-symbols-outlined fill text-[16px]">star</span>
+<span class="material-symbols-outlined fill text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-stack-sm">Very comfortable</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-stack-md">
+                            "Took a little while to arrive, but the quality is exceptional. The cushions are supportive and the fabric breathes well."
+                        </p>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Elena R. — August 05, 2023</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-50 dark:bg-stone-900 text-sm font-['Inter'] leading-relaxed w-full border-t border-stone-200 dark:border-stone-800 mt-20 tonal shift with border-t flat no shadows">
+<div class="max-w-[1280px] mx-auto px-10 py-16 flex flex-col md:flex-row justify-between items-start gap-8">
+<div class="flex flex-col gap-4">
+<span class="text-lg font-semibold text-[#6B705C] dark:text-[#8B9178]">Aura Home</span>
+<p class="text-stone-600 dark:text-stone-400">© 2024 Aura Home. Designed for quiet luxury.</p>
+</div>
+<nav class="flex flex-col md:flex-row gap-6 md:gap-12">
+<a class="text-stone-500 hover:text-stone-800 dark:hover:text-stone-200 hover:underline underline-offset-8 transition-all ease-in-out duration-200" href="#">Sustainability</a>
+<a class="text-stone-500 hover:text-stone-800 dark:hover:text-stone-200 hover:underline underline-offset-8 transition-all ease-in-out duration-200" href="#">Shipping &amp; Returns</a>
+<a class="text-stone-500 hover:text-stone-800 dark:hover:text-stone-200 hover:underline underline-offset-8 transition-all ease-in-out duration-200" href="#">Privacy Policy</a>
+<a class="text-stone-500 hover:text-stone-800 dark:hover:text-stone-200 hover:underline underline-offset-8 transition-all ease-in-out duration-200" href="#">Store Locator</a>
+</nav>
+</div>
+</footer>
+</body></html>
