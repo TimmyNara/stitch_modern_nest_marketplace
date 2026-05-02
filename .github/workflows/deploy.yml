@@ -26,13 +26,13 @@ jobs:
 
       - run: npm install
 
-      - run: npx nuxt build --preset github_pages
+      - run: npm run generate
         env:
           NUXT_APP_BASE_URL: /stitch_modern_nest_marketplace/
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./.output/public
+          path: ./dist
 
   deploy:
     needs: build
