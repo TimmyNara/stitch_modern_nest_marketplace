@@ -5,6 +5,7 @@
     "dev": "nuxt dev",
     "build": "nuxt build",
     "generate": "nuxt generate",
+    "deploy": "nuxt generate",
     "preview": "nuxt preview"
   },
   "dependencies": {
